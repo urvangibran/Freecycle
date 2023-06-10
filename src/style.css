@@ -177,10 +177,12 @@ header {
 
 header.scrolled {
     width: 100%;
+    height: 7vh;
     top: 0;
     left: 0;
     background-color: rgb(62, 52, 52);
-    box-shadow: 5px 5px 12px 2px rgba(0,0,0,.8);;
+    box-shadow: 5px 5px 12px 2px rgba(0, 0, 0, .8);
+    ;
     opacity: 100;
 }
 
@@ -194,6 +196,27 @@ header.scrolled .center-nav h3:hover {
 
 header.scrolled hr {
     display: none;
+}
+
+header.scrolled .nav {
+    width: 98%;
+    top: -13px;
+    position: absolute;
+}
+
+header.scrolled .nav p {
+    font-size: 15px;
+}
+
+header.scrolled .nav h3 {
+    font-size: 27px;
+}
+
+header.scrolled .search .icon {
+    left: 16px;
+    top: 20px;
+    width: 28px;
+    height: 28px;
 }
 
 .search .icon {
@@ -321,7 +344,8 @@ header.scrolled hr {
     cursor: pointer;
 }
 
-.profile:hover, .pic-nav:hover {
+.profile:hover,
+.pic-nav:hover {
     transform: scale(0.9);
     opacity: 80%;
 }
@@ -782,9 +806,6 @@ main {
 .link a {
     cursor: pointer;
     position: relative;
-    color: blue
-        /*  */
-    ;
 }
 
 .link a::after {
@@ -822,7 +843,6 @@ main {
 
 .link a:hover::after {
     width: 0%;
-
 }
 
 /* WRAPPER */
@@ -931,3 +951,362 @@ main {
 .quote h3:hover {
     transform: scale(0.96);
 }
+
+.content-analytic {
+    /* background-color: #DCDCDC; */
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    height: 100vh;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100vh;
+    background-color: #1E1E1E;
+}
+
+.content .top {
+    width: 58%;
+    /* background-color: red; */
+    height: 40%;
+    box-sizing: border-box;
+    padding: 40px 30px;
+    color: white;
+}
+
+.top h1 {
+    font-size: 57px;
+    margin-bottom: 20px;
+    font-variant: small-caps;
+}
+
+.top p {
+    font-size: 21px;
+    margin-bottom: 20px;
+    line-height: 31px;
+}
+
+.link-pg3 a {
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+    /* margin: 30px; */
+    text-align: center;
+    color: white;
+}
+
+.link-pg3 a::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    border-radius: 30%;
+    width: 100%;
+    /* right: 0; */
+    bottom: -10px;
+    right: 0px;
+    transition: 0.3s;
+}
+
+.link-pg3 a::after {
+    background-color: white;
+    left: 0;
+}
+
+.link-pg3 a:hover::after {
+    width: 0%;
+}
+
+.content .bottom {
+    width: 58%;
+    /* background-color: red; */
+    /* position: relative; */
+    height: 40%;
+    box-sizing: border-box;
+    padding: 40px 30px;
+    color: white;
+}
+
+.analytic {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    background: url("../image/analytic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bottom p {
+    color: #A5A5A5;
+    width: 120%;
+    padding: 28px 3px 0px 0;
+    font-size: 20px;
+    /* background-color: red; */
+    cursor: pointer;
+}
+
+.bottom p:hover{
+    color: white;
+}
+
+.bottom div {
+    width: 800px;
+    position: absolute;
+    right: 70px;
+    height: 290px;
+    transition: all 0.2s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+/* Start Hover Text - Image */
+
+.bottom .img-1{
+    top: 15px;
+    right: 70px;
+}
+
+.img-1 {
+    /* background-color: red; */
+    background: url(../image/analytic/perfect.jpg);
+    background-size: cover;
+    visibility: hidden;
+}
+
+.hover-img1:hover ~ .img-1 {
+    visibility: visible;
+}
+
+.bottom .img-2{
+    top: 320px;
+}
+
+.img-2 {
+    background: url(../image/analytic/good.jpg);
+    background-size: cover;
+    visibility: hidden;
+    /* height: 300px; */
+}
+
+.hover-img2:hover ~ .img-2 {
+    visibility: visible;
+}
+
+.bottom .img-3 {
+    top: 625px;
+}
+
+.img-3 {
+    background: url(../image/analytic/bad.jpg);
+    background-size: cover;
+    visibility: hidden;
+    /* height: 300px; */
+}
+
+.hover-img3:hover ~ .img-3 {
+    visibility: visible;
+}
+
+/* End Hover Text - Image*/
+
+.small-caps {
+    font-variant: small-caps;
+}
+
+/* Start Styling Footer  */
+footer {
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    background-color: #ddd7d7;
+}
+
+.container-footer{
+    display: grid;
+    grid-template-rows: 3fr 0.5fr;
+    width: 99%;
+    height: 94%;
+    margin: auto;
+    /* background-color: red; */
+    background: url(../image/footer/footer.jpg );
+    background-size: cover;
+    background-color: black;
+    background-blend-mode: screen;
+    background-position: 0px 630px;
+    /* opacity: 0%; */
+}
+
+.container-footer h2{
+    color: white;
+    font-size: 34px;
+    font-family: 'Dancing Script', cursive;;
+}
+
+.top-footer {
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color: white;
+
+} 
+
+.left-foot {
+    /* background-color: rgb(31, 31, 162); */
+    padding: 40px;
+    font-size: 17px;
+}
+
+.lt-foot h2{
+    /* font-size: 20px; */
+    margin-bottom: 30px;
+}
+
+.lm-foot {
+    margin-bottom: 30px;
+}
+
+.lm-foot p {
+    margin-bottom: 8px;
+}
+
+.lb-foot p{
+    margin-bottom: 8px;
+}
+
+.mid-foot {
+    margin-top: 40px;
+    text-align: center;
+}
+.mid-foot p {
+    cursor: pointer;    
+    margin-bottom: 30px;
+    font-size: 22px;
+}
+
+.mid-foot p:hover {
+    color: #A5A5A5;
+    /* font-size: 18px; */
+} 
+
+.right-foot {
+    /* background-color: rgb(49, 185, 90); */
+    font-size: 20px;
+    margin-top: 33px;
+}
+
+.right-foot h2, .right-foot h3 {
+    margin-bottom: 23px;
+}
+
+/* Email */
+.wrapper-footer {
+    width: 450px;
+    background: transparent;
+    /* background: white; */
+    padding: 30px 0px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 33px;
+}
+.wrapper-footer .input-data {
+    height: 40ox;
+    width: 100%;
+    position: relative;
+}
+.wrapper-footer .input-data input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 17px;
+    border-bottom: 2px solid silver;
+}
+
+.input-data input{
+    background: transparent;
+}
+
+.input-data input:focus ~ label, 
+.input-data input:valid ~ label{
+    transform: translateY(-20px);
+    font-size: 15px;
+    color: var(--brown);
+}
+.wrapper-footer .input-data label{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: white;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.wrapper-footer .input-data .underline {
+    position: absolute;
+    bottom: 0px;
+    height: 2px;
+    width: 100%;
+}
+.input-data .underline::before{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: var(--brown);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+.input-data input:focus ~ .underline::before,
+.input-data input:valid ~ .underline::before {
+    transform: scaleX(1);
+}
+
+/* End Email */
+
+.right-foot input {
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 23px;
+    display: inline;
+}
+
+.right-foot p .t-1{
+    float: left;
+    margin-bottom: 30px;
+}
+
+.right-foot p {
+    margin: 16px 0;
+}
+
+.bottom-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 0px;
+    box-sizing: border-box;
+}
+
+.bt {
+    margin-bottom: 30px;
+}
+
+.bottom-footer .bt h5 {
+    font-size: 20px;
+    color: white;
+    margin: 0 25px;
+    display: inline;
+    font-variant:small-caps ;
+    cursor: pointer;
+}
+
+.bottom-footer .bt h5:hover {
+    color: #A5A5A5;
+    /* font-size: 18px; */
+} 
+
+.bb p {
+    color: white;
+}
+
+/* End Styling Footer */
