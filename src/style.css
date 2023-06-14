@@ -579,6 +579,7 @@ main {
     border-radius: 50%;
     margin: 30px 15px;
     transition: 0.4s ease;
+    cursor: pointer;
 }
 
 .arr:hover {
@@ -1035,7 +1036,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 14px;
-    background: url("../image/analytic.jpg");
+    background: url("../image/analytic/analytic.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -1057,36 +1058,37 @@ main {
     width: 800px;
     position: absolute;
     right: 70px;
-    height: 290px;
+    height: 800px;
     transition: all 0.2s cubic-bezier(0.215, 0.610, 0.355, 1);
+    top: 60px;
+    right: 70px;
+    visibility: hidden;
 }
 
 /* Start Hover Text - Image */
 
-.bottom .img-1{
-    top: 15px;
-    right: 70px;
+.bottom { 
+   
 }
 
 .img-1 {
     /* background-color: red; */
     background: url(../image/analytic/perfect.jpg);
     background-size: cover;
-    visibility: hidden;
+    background-position: -20px;
+    /* visibility: hidden; */
+
 }
 
 .hover-img1:hover ~ .img-1 {
     visibility: visible;
 }
 
-.bottom .img-2{
-    top: 320px;
-}
-
 .img-2 {
     background: url(../image/analytic/good.jpg);
     background-size: cover;
-    visibility: hidden;
+    background-position: -600px center;
+    /* visibility: hidden; */
     /* height: 300px; */
 }
 
@@ -1094,14 +1096,11 @@ main {
     visibility: visible;
 }
 
-.bottom .img-3 {
-    top: 625px;
-}
-
 .img-3 {
     background: url(../image/analytic/bad.jpg);
     background-size: cover;
-    visibility: hidden;
+    background-position: -300px center;
+    /* visibility: hidden; */
     /* height: 300px; */
 }
 
