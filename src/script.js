@@ -1,11 +1,32 @@
-var counter = 1;
+var counter = 1
+
+function prevSlide() {
+    counter--
+    if (counter < 1) counter = 5
+    updateSlide()
+}
+
+function nextSlide() {
+    counter++
+    if (counter > 5) counter = 1
+    updateSlide()
+}
+
+function updateSlide() {
+    document.getElementById('radio' + counter).checked = true
+    const counterPicture = document.getElementById("counter-picture")
+    counterPicture.textContent = '0' + counter 
+}
+
+function updateCounter(newCounter) {
+    counter = newCounter
+    updateSlide()
+}
+
+updateSlide()
+
 setInterval(() => {
-    document.getElementById('radio' + counter).checked = true;
-    const counterPicture = document.getElementById("countPic");
-    counterPicture.textContent = '0' + counter;
-    counter++;
-    if (counter > 5)
-        counter = 1;
+    nextSlide()
 }, 3000);
 
 // Nav Scrolled
