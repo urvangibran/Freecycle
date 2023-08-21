@@ -965,7 +965,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 14px;
-    background: url("../image/analytic/analytic.jpg");
+    background: url("../assets/analytic/analytic.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -1004,7 +1004,7 @@ main {
 }
 
 .img-1 {
-    background: url(../image/analytic/perfect.jpg);
+    background: url("../assets/analytic/perfect.jpg");
     background-size: cover;
     background-position: -20px;
     /* visibility: hidden; */
@@ -1016,7 +1016,7 @@ main {
 }
 
 .img-2 {
-    background: url(../image/analytic/good.jpg);
+    background: url("../assets/analytic/good.jpg");
     background-size: cover;
     background-position: -600px center;
     /* visibility: hidden; */
@@ -1028,7 +1028,7 @@ main {
 }
 
 .img-3 {
-    background: url(../image/analytic/bad.jpg);
+    background: url("../assets/analytic/bad.jpg");
     background-size: cover;
     background-position: -300px center;
     /* visibility: hidden; */
@@ -1061,7 +1061,7 @@ footer {
     height: 94%;
     margin: auto;
     /* background-color: red; */
-    background: url(../image/footer/footer-.jpg );
+    background: url("../assets/footer/footer-.jpg" );
     background-size: cover;
     background-color: black;
     background-blend-mode: screen;
